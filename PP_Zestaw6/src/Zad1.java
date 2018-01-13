@@ -8,23 +8,23 @@
  */
 import java.io.*;
 public class Zad1 {
-	public static void liczZnakiSlowa(String filePath) throws Exception {
+	public static int liczZnakiSlowa(int a) throws Exception {
 		String tekst;
-		int i;
+		int i, j;
 		File file = new File("Zad1.txt");
 		FileReader f = new FileReader(file);
 		BufferedReader b = new BufferedReader(f);
 		tekst = b.readLine();
 		do {
 		    System.out.println(tekst);
-		  
 		    tekst = b.readLine();
-		  } while(tekst != null);
+		   } while(tekst != null);
 		
-		  b.close();
-		  }
+		b.close();
+		return a;
+		}
 	
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) throws Exception {
+		Zad1.liczZnakiSlowa(1);
 		}
 }
